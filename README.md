@@ -1,2 +1,2 @@
 # Automata
-C++ text based game
+Turn based combat game with random map, enemy  and loot generation.
