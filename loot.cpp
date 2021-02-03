@@ -15,7 +15,7 @@ double Loot::get_health()
     return loot_health;
 }
 
-Loot::Loot()
+Loot::Loot(int x,int y)
 {
     srand(time(0));
     int random;
@@ -41,6 +41,9 @@ Loot::Loot()
         damage_multiplier = 1.20;
         loot_health = 50;
     }
+
+    loot_position.first = x;
+    loot_position.second = y;
 }
 
 double Loot::activate(string type)

@@ -1,5 +1,8 @@
 #include "loot.h"
 #include "player.h"
+#include "knight.h"
+#include "wizard.h"
+#include "assassin.h"
 #include <string>
 #include <time.h>
 #include <iostream>
@@ -8,30 +11,6 @@ using namespace std;
 
 Player::Player()
 {
-    string choice;
-    cout << "Choose your class" << endl;
-    cout << "Kinght - K" << endl;
-    cout << "Miner - M" << endl;
-    cout << "Assassin - A" << endl;
-    getline(cin,choice);
-
-    if (choice == "K" || choice == "k")
-    {
-        hp = 150;
-        damage = 20;
-    }
-
-    else if (choice == "M" || choice == "m")
-    {
-        hp = 100;
-        damage = 16;
-    }
-
-    else if(choice == "A" || choice == "a")
-    {
-        hp = 80;
-        damage = 12;
-    }
 
     int x;
     int y;

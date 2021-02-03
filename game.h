@@ -2,18 +2,26 @@
 #define GAME_H
 #include "player.h"
 #include "loot.h"
-#include "map.h"
+#include "board.h"
+#include <utility>
+
 
 using namespace std;
 
 class Game
 {
     private:
-        Player player1;
-        Map map1;
+        Board board1;
+        Player* player1;
 
     public:
-        void display();
-        
+        void display(); 
+        string input();
+        Game();
+        Board get_board();
+        void run();
+        void display_intial();
+
+       
 };
 #endif

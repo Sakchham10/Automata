@@ -7,7 +7,7 @@ using namespace std;
 
 class Player
 {
-    private:
+    protected:
         string type;
         double hp;
         double damage;
